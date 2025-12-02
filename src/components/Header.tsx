@@ -16,12 +16,12 @@ export function Header() {
             <Phone className="w-4 h-4" />
             <span>Crisis Line: 988 Press 1</span>
           </a>
-          <span className="hidden sm:inline text-white/80">|</span>
+          <span className="hidden sm:inline text-white">|</span>
           <a href="sms:838255" className="hidden sm:flex items-center gap-2 hover:underline">
             <span>Text: 838255</span>
           </a>
-          <span className="hidden sm:inline text-white/80">|</span>
-          <span className="hidden md:inline">24/7 Support Available</span>
+          <span className="hidden sm:inline text-white">|</span>
+          <span className="hidden md:inline text-white">24/7 Support Available</span>
         </div>
       </div>
 
