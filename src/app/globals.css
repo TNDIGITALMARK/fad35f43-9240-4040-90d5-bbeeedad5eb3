@@ -251,6 +251,32 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Override link colors when explicitly set to white */
+a.text-white,
+a[class*="text-white"] {
+  color: hsl(0 0% 100%) !important;
+}
+
+a.text-white:hover,
+a[class*="text-white"]:hover {
+  color: hsl(0 0% 100%) !important;
+  text-decoration: none;
+}
+
+/* Force white text on all elements with text-white class */
+.text-white,
+[class*="text-white"] {
+  color: hsl(0 0% 100%) !important;
+}
+
+/* Ensure text-white works with blue backgrounds specifically */
+.bg-blue-800.text-white,
+.bg-blue-900.text-white,
+.bg-blue-800 .text-white,
+.bg-blue-900 .text-white {
+  color: hsl(0 0% 100%) !important;
+}
+
 /* Clean button styles */
 button {
   font-weight: 500;
@@ -282,6 +308,8 @@ button {
 .bg-blue-500,
 .bg-blue-600,
 .bg-blue-700,
+.bg-blue-800,
+.bg-blue-900,
 .bg-green-500,
 .bg-green-600,
 .bg-green-700,
@@ -289,7 +317,7 @@ button {
 .bg-secondary,
 .bg-accent,
 .bg-destructive {
-  color: hsl(0 0% 100%);
+  color: hsl(0 0% 100%) !important;
 }
 
 /* Ensure hover states maintain white text */
@@ -299,6 +327,10 @@ button {
 .bg-blue-500:hover,
 .bg-blue-600:hover,
 .bg-blue-700:hover,
+.bg-blue-800:hover,
+.bg-blue-900:hover,
+.hover\:bg-blue-800,
+.hover\:bg-blue-900,
 .bg-green-500:hover,
 .bg-green-600:hover,
 .bg-green-700:hover,
@@ -306,5 +338,5 @@ button {
 .bg-secondary:hover,
 .bg-accent:hover,
 .bg-destructive:hover {
-  color: hsl(0 0% 100%);
+  color: hsl(0 0% 100%) !important;
 }
