@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "Gratitude Farm & Aspen Veterans Project - Supporting Our Veterans",
+  description: "A sanctuary for veterans struggling with decompression and reintegration. Immediate crisis support, community connection, and comprehensive programs for veterans in need.",
 };
 
 export default function RootLayout({
