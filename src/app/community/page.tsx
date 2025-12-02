@@ -271,7 +271,7 @@ export default function CommunityPage() {
       {/* Volunteer CTA */}
       <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-800 text-white px-4">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-4xl font-bold mb-6 text-white">
             Want to Give Back?
           </h2>
           <p className="text-xl mb-8 text-blue-100">
@@ -283,7 +283,7 @@ export default function CommunityPage() {
               <Heart className="w-5 h-5" />
               Become a Mentor
             </button>
-            <button className="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-700 transition-colors inline-flex items-center justify-center gap-2">
+            <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center gap-2">
               <Users className="w-5 h-5" />
               Volunteer Opportunities
             </button>
@@ -296,13 +296,13 @@ export default function CommunityPage() {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="text-lg font-bold mb-4">Gratitude Farm</h3>
+              <h3 className="text-lg font-bold mb-4 text-white">Gratitude Farm</h3>
               <p className="text-gray-400">
                 A sanctuary for veterans in Colorado, providing comprehensive support for reintegration and healing.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+              <h3 className="text-lg font-bold mb-4 text-white">Quick Links</h3>
               <ul className="space-y-2 text-gray-400">
                 <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
                 <li><Link href="/community" className="hover:text-white transition-colors">Community</Link></li>
@@ -310,7 +310,7 @@ export default function CommunityPage() {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-bold mb-4">Crisis Resources</h3>
+              <h3 className="text-lg font-bold mb-4 text-white">Crisis Resources</h3>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="tel:988" className="hover:text-white transition-colors">Veterans Crisis Line: 988</a></li>
                 <li><a href="sms:838255" className="hover:text-white transition-colors">Text: 838255</a></li>

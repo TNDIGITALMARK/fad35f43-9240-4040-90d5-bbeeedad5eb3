@@ -317,7 +317,7 @@ export default function ProgramsPage() {
           </div>
 
           <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-12 text-center text-white">
-            <h3 className="text-3xl font-bold mb-4">Ready to Get Started?</h3>
+            <h3 className="text-3xl font-bold mb-4 text-white">Ready to Get Started?</h3>
             <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
               Our team is standing by to answer your questions and help you access the support you need.
             </p>
@@ -326,7 +326,7 @@ export default function ProgramsPage() {
                 <Download className="w-5 h-5" />
                 Download Application
               </button>
-              <button className="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-700 transition-colors">
+              <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
                 Contact Enrollment Team
               </button>
             </div>
@@ -380,13 +380,13 @@ export default function ProgramsPage() {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="text-lg font-bold mb-4">Gratitude Farm</h3>
+              <h3 className="text-lg font-bold mb-4 text-white">Gratitude Farm</h3>
               <p className="text-gray-400">
                 A sanctuary for veterans in Colorado, providing comprehensive support for reintegration and healing.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+              <h3 className="text-lg font-bold mb-4 text-white">Quick Links</h3>
               <ul className="space-y-2 text-gray-400">
                 <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
                 <li><Link href="/community" className="hover:text-white transition-colors">Community</Link></li>
@@ -394,7 +394,7 @@ export default function ProgramsPage() {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-bold mb-4">Crisis Resources</h3>
+              <h3 className="text-lg font-bold mb-4 text-white">Crisis Resources</h3>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="tel:988" className="hover:text-white transition-colors">Veterans Crisis Line: 988</a></li>
                 <li><a href="sms:838255" className="hover:text-white transition-colors">Text: 838255</a></li>
