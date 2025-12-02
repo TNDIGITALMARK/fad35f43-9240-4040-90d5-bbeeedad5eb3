@@ -268,3 +268,43 @@ button {
 .shadow-md {
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
+
+/* Button Text Color Utilities - Ensures white text on colored buttons */
+.btn-text-white,
+.text-btn-white {
+  color: hsl(0 0% 100%) !important;
+}
+
+/* Specific button background color classes with forced white text */
+.bg-red-500,
+.bg-red-600,
+.bg-red-700,
+.bg-blue-500,
+.bg-blue-600,
+.bg-blue-700,
+.bg-green-500,
+.bg-green-600,
+.bg-green-700,
+.bg-primary,
+.bg-secondary,
+.bg-accent,
+.bg-destructive {
+  color: hsl(0 0% 100%);
+}
+
+/* Ensure hover states maintain white text */
+.bg-red-500:hover,
+.bg-red-600:hover,
+.bg-red-700:hover,
+.bg-blue-500:hover,
+.bg-blue-600:hover,
+.bg-blue-700:hover,
+.bg-green-500:hover,
+.bg-green-600:hover,
+.bg-green-700:hover,
+.bg-primary:hover,
+.bg-secondary:hover,
+.bg-accent:hover,
+.bg-destructive:hover {
+  color: hsl(0 0% 100%);
+}
