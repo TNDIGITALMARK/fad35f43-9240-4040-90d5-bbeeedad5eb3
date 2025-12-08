@@ -80,14 +80,14 @@ export default function CommunityPage() {
       <CrisisFAB />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 px-4 bg-gradient-to-br from-blue-50 to-green-50">
+      <section className="relative pt-32 pb-20 px-4 bg-blue-50">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                Connect with <span className="text-blue-600">Fellow Veterans</span>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight !text-gray-900">
+                Connect with <span className="!text-blue-600">Fellow Veterans</span>
               </h1>
-              <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+              <p className="text-xl !text-gray-800 mb-8 leading-relaxed font-medium">
                 You don't have to face the challenges of reintegration alone. Join a community
                 of veterans who understand your journey and are here to support you.
               </p>
@@ -125,20 +125,20 @@ export default function CommunityPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-5xl font-bold text-blue-600 mb-2">150+</div>
-              <div className="text-gray-600 font-medium">Active Mentors</div>
+              <div className="text-5xl font-bold !text-blue-600 mb-2">150+</div>
+              <div className="!text-gray-800 font-bold">Active Mentors</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-green-600 mb-2">24/7</div>
-              <div className="text-gray-600 font-medium">Support Available</div>
+              <div className="text-5xl font-bold !text-green-600 mb-2">24/7</div>
+              <div className="!text-gray-800 font-bold">Support Available</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-red-600 mb-2">500+</div>
-              <div className="text-gray-600 font-medium">Veterans Connected</div>
+              <div className="text-5xl font-bold !text-red-600 mb-2">500+</div>
+              <div className="!text-gray-800 font-bold">Veterans Connected</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-blue-900 mb-2">12</div>
-              <div className="text-gray-600 font-medium">Support Groups</div>
+              <div className="text-5xl font-bold !text-blue-900 mb-2">12</div>
+              <div className="!text-gray-800 font-bold">Support Groups</div>
             </div>
           </div>
         </div>
@@ -148,8 +148,8 @@ export default function CommunityPage() {
       <section id="mentorship" className="py-20 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Peer Mentorship Network</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold mb-4 !text-gray-900">Peer Mentorship Network</h2>
+            <p className="text-xl !text-gray-800 max-w-3xl mx-auto font-medium">
               Connect one-on-one with veterans who have successfully navigated reintegration
               and are dedicated to helping others on the same journey.
             </p>
@@ -193,11 +193,11 @@ export default function CommunityPage() {
       </section>
 
       {/* Support Groups Section */}
-      <section id="support-groups" className="py-20 px-4">
+      <section id="support-groups" className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Support Groups</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold mb-4 !text-gray-900">Support Groups</h2>
+            <p className="text-xl !text-gray-800 max-w-3xl mx-auto font-medium">
               Join structured support groups led by experienced facilitators who understand
               the unique challenges veterans face.
             </p>
@@ -236,11 +236,11 @@ export default function CommunityPage() {
       </section>
 
       {/* Success Stories */}
-      <section className="py-20 px-4 bg-gradient-to-br from-blue-50 to-green-50">
+      <section className="py-20 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Success Stories</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold mb-4 !text-gray-900">Success Stories</h2>
+            <p className="text-xl !text-gray-800 max-w-3xl mx-auto font-medium">
               Real veterans sharing how community connection transformed their lives.
             </p>
           </div>
@@ -269,22 +269,22 @@ export default function CommunityPage() {
       </section>
 
       {/* Volunteer CTA */}
-      <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-800 text-white px-4">
+      <section className="py-20 bg-blue-900 px-4">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl font-bold mb-6 text-white">
+          <h2 className="text-4xl font-bold mb-6 !text-white">
             Want to Give Back?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 !text-blue-100 font-medium">
             If you've found stability and healing, consider becoming a peer mentor
             or volunteer to help other veterans on their journey.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2">
-              <Heart className="w-5 h-5" />
+            <button className="bg-white !text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2">
+              <Heart className="w-5 h-5 !text-blue-900" />
               Become a Mentor
             </button>
-            <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center gap-2">
-              <Users className="w-5 h-5" />
+            <button className="bg-green-600 hover:bg-green-700 !text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center gap-2">
+              <Users className="w-5 h-5 !text-white" />
               Volunteer Opportunities
             </button>
           </div>

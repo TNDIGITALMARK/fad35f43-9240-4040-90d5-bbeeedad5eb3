@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -10,18 +11,22 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       {/* Crisis Hotline Bar */}
-      <div className="bg-red-600 text-white py-2 px-4">
-        <div className="container mx-auto flex items-center justify-center gap-6 text-sm font-medium">
-          <a href="tel:988" className="flex items-center gap-2 hover:underline">
+      <div className="bg-gradient-to-r from-red-600 to-red-700 text-white py-3 px-4 shadow-lg">
+        <div className="container mx-auto flex items-center justify-center gap-6 text-sm font-semibold">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 bg-white rounded-full animate-pulse" />
+            <span className="text-xs uppercase tracking-wide">Emergency Support</span>
+          </div>
+          <a href="tel:988" className="flex items-center gap-2 hover:underline hover:text-red-100 transition-colors">
             <Phone className="w-4 h-4" />
             <span>Crisis Line: 988 Press 1</span>
           </a>
-          <span className="hidden sm:inline text-white">|</span>
-          <a href="sms:838255" className="hidden sm:flex items-center gap-2 hover:underline">
+          <span className="hidden sm:inline text-red-200">|</span>
+          <a href="sms:838255" className="hidden sm:flex items-center gap-2 hover:underline hover:text-red-100 transition-colors">
             <span>Text: 838255</span>
           </a>
-          <span className="hidden sm:inline text-white">|</span>
-          <span className="hidden md:inline text-white">24/7 Support Available</span>
+          <span className="hidden md:inline text-red-200">|</span>
+          <span className="hidden md:inline text-white font-bold">24/7 Available</span>
         </div>
       </div>
 
@@ -30,9 +35,14 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-red-600 via-blue-800 to-green-700 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">GF</span>
-            </div>
+            <Image
+              src="/avp-logo.png"
+              alt="Aspen Veterans Project - Gratitude Farm"
+              width={48}
+              height={48}
+              priority
+              className="h-12 w-auto"
+            />
             <div className="hidden sm:block">
               <div className="font-bold text-lg text-navy-900 leading-tight">
                 Gratitude Farm
@@ -62,9 +72,10 @@ export function Header() {
               Programs
             </Link>
             <a
-              href="#get-help"
-              className="bg-red-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+              href="#crisis-support"
+              className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-2.5 rounded-lg font-semibold hover:from-red-700 hover:to-red-800 transition-all shadow-md hover:shadow-lg flex items-center gap-2"
             >
+              <Phone className="w-4 h-4" />
               Get Help Now
             </a>
           </nav>
@@ -105,10 +116,11 @@ export function Header() {
                 Programs
               </Link>
               <a
-                href="#get-help"
-                className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors text-center"
+                href="#crisis-support"
+                className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-lg font-semibold hover:from-red-700 hover:to-red-800 transition-all text-center flex items-center justify-center gap-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
+                <Phone className="w-4 h-4" />
                 Get Help Now
               </a>
             </nav>
