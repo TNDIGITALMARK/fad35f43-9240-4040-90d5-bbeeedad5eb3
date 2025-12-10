@@ -36,7 +36,7 @@ const programs = [
     title: "Housing & Stability Support",
     description: "Secure housing assistance and pathways to stable living arrangements",
     features: [
-      "Temporary housing at Gratitude Farm sanctuary",
+      "Temporary housing at our mountain sanctuary",
       "Rental assistance and deposit support",
       "Homeownership preparation programs",
       "Long-term housing navigation"
@@ -226,7 +226,7 @@ export default function ProgramsPage() {
                 <span className="text-green-600">Gratitude Farm</span> Sanctuary
               </h2>
               <p className="text-xl text-gray-700 mb-6 leading-relaxed">
-                Our peaceful Colorado mountain sanctuary provides a safe, supportive environment
+                Our protected mountain sanctuary in southern New Mexico provides a safe, supportive environment
                 where veterans can heal, learn, and rebuild their lives.
               </p>
 
@@ -245,7 +245,7 @@ export default function ProgramsPage() {
                   <div>
                     <h4 className="font-bold text-blue-900 mb-2">Location</h4>
                     <p className="text-gray-700">
-                      Nestled in the Colorado mountains, our sanctuary offers breathtaking views,
+                      Nestled in the mountains of southern New Mexico, our sanctuary offers breathtaking views,
                       fresh mountain air, and a peaceful environment conducive to healing.
                     </p>
                   </div>
@@ -382,7 +382,7 @@ export default function ProgramsPage() {
             <div>
               <h3 className="text-lg font-bold mb-4 !text-white">Gratitude Farm</h3>
               <p className="text-gray-400">
-                A sanctuary for veterans in Colorado, providing comprehensive support for reintegration and healing.
+                A mountain sanctuary in southern New Mexico for veterans, providing comprehensive support for reintegration and healing through multi-modal therapy and lifelong brotherhood.
               </p>
             </div>
             <div>

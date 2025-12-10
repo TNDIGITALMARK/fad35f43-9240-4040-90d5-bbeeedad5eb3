@@ -36,7 +36,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/avp-logo.png"
+              src="https://77e93381c682217fcef0325458269ad5.r2.cloudflarestorage.com/phoenix/users/DxnmDi7kzHNtCxrnSWG6FJ4Bplz2/projects/fad35f43-9240-4040-90d5-bbeeedad5eb3/imageContext/e022b51c-a87f-482d-a64e-5aa92c656079.png"
               alt="Aspen Veterans Project - Gratitude Farm"
               width={48}
               height={48}
@@ -45,9 +45,9 @@ export function Header() {
             />
             <div className="hidden sm:block">
               <div className="font-bold text-lg text-navy-900 leading-tight">
-                Gratitude Farm
+                Aspen Veterans Project
               </div>
-              <div className="text-xs text-gray-600">Aspen Veterans Project</div>
+              <div className="text-xs text-gray-600">Gratitude Farm</div>
             </div>
           </Link>
 

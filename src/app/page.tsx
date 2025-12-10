@@ -237,8 +237,8 @@ export default function Index() {
           <div className="text-center mb-16">
             <div className="inline-block mb-6">
               <Image
-                src="/avp-logo.png"
-                alt="AVP Logo"
+                src="https://77e93381c682217fcef0325458269ad5.r2.cloudflarestorage.com/phoenix/users/DxnmDi7kzHNtCxrnSWG6FJ4Bplz2/projects/fad35f43-9240-4040-90d5-bbeeedad5eb3/imageContext/e022b51c-a87f-482d-a64e-5aa92c656079.png"
+                alt="Aspen Veterans Project Logo"
                 width={100}
                 height={100}
                 className="mx-auto"
@@ -254,7 +254,7 @@ export default function Index() {
           <div className="max-w-4xl mx-auto mb-12">
             <div className="bg-gradient-to-r from-blue-900 to-blue-800 rounded-3xl p-12 shadow-2xl text-center">
               <p className="text-3xl font-bold !text-white leading-relaxed">
-                A world where every veteran lives free of CPTSD, isolation, and the deadly toll of homelessness—restored to connection, productivity, and a growing life after service.
+                A world where no veteran is lost to CPTSD, isolation, homelessness, or suicide—where every veteran receives the decompression and reintegration support needed to return to a life of purpose, connection, productivity, and emotional stability.
               </p>
             </div>
           </div>
@@ -262,9 +262,9 @@ export default function Index() {
           {/* Mid-Length Vision */}
           <div className="max-w-5xl mx-auto mb-12">
             <div className="bg-white rounded-3xl p-10 lg:p-16 shadow-xl border border-gray-200">
-              <h3 className="text-3xl font-bold mb-6 !text-blue-900 text-center">A Future Without Invisible Wounds</h3>
+              <h3 className="text-3xl font-bold mb-6 !text-blue-900 text-center">The Aspen Grove: Strength Through Connection</h3>
               <p className="text-xl !text-gray-800 leading-relaxed font-medium">
-                AVP envisions a future where no veteran is lost to the invisible wounds of service. A future where CPTSD, isolation, and homelessness no longer claim the lives of those who wore the uniform; where every service member receives a guided, gradual, community-rooted decompression after deployment. This vision centres on helping veterans return to a state of renewed creativity, emotional stability, purpose, and deep connection with peers who understand their lived reality.
+                Veterans are grounded in lifelong community, mirroring the interconnected strength of an aspen grove—where individual trees appear separate above ground, but are connected through a vast root system beneath the surface. This vision centers on helping veterans return to a state of renewed creativity, emotional stability, purpose, and deep connection with peers who understand their lived reality.
               </p>
             </div>
           </div>
@@ -319,7 +319,7 @@ export default function Index() {
           <div className="max-w-4xl mx-auto mb-12">
             <div className="bg-gradient-to-r from-green-700 to-green-600 rounded-3xl p-12 shadow-2xl text-center">
               <p className="text-3xl font-bold !text-white leading-relaxed">
-                AVP guides combat veterans from survival to thriving through lifelong, multi-modal healing, grounded in nature, honest brotherhood, and renewed purpose—anchored at a permanently protected mountain sanctuary in southern New Mexico, supported for life.
+                AVP guides combat veterans from survival to thriving through multi-modal healing, deep nature immersion, physical and creative challenge, philosophical dialogue, and peer bonding on a protected mountain sanctuary in southern New Mexico—followed by lifelong support and brotherhood. This is not a retreat but a permanent reintegration pathway.
               </p>
             </div>
           </div>
@@ -411,16 +411,78 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Founder Introduction */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
+        <div className="container mx-auto max-w-7xl px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-5xl font-bold mb-6 !text-gray-900">
+              Founded on Clinical Excellence
+            </h2>
+            <div className="w-24 h-1 bg-blue-600 mx-auto mb-8" />
+          </div>
+
+          <div className="max-w-5xl mx-auto bg-white rounded-3xl p-10 lg:p-16 shadow-2xl border border-gray-200">
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              <div className="md:w-1/3">
+                <div className="bg-gradient-to-br from-blue-100 to-green-100 rounded-2xl p-8 text-center">
+                  <div className="w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Heart className="w-12 h-12 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold !text-blue-900 mb-2">Erica Angell</h3>
+                  <p className="text-sm font-semibold !text-gray-700">Founder & Clinical Director</p>
+                  <div className="mt-4 pt-4 border-t border-gray-300">
+                    <div className="text-3xl font-bold text-blue-900">30+</div>
+                    <div className="text-xs font-medium text-gray-600">Years Experience</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="md:w-2/3 space-y-6">
+                <p className="text-xl !text-gray-800 leading-relaxed font-medium">
+                  Erica Angell, a clinician with <span className="font-bold !text-blue-900">30+ years of experience</span> in somatic, energetic, and trauma-aware therapeutic practices, founded AVP to fill a critical gap in the military system: <span className="font-bold !text-red-600">veterans are trained for combat but not decompressed or reintegrated after service.</span>
+                </p>
+
+                <div className="bg-blue-50 rounded-2xl p-6 border-l-4 border-blue-600">
+                  <h4 className="text-lg font-bold !text-blue-900 mb-3">Clinical Background</h4>
+                  <div className="grid md:grid-cols-2 gap-3">
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                      <span className="!text-gray-800 font-medium">Reiki Master</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                      <span className="!text-gray-800 font-medium">Therapeutic Bodywork</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                      <span className="!text-gray-800 font-medium">Energy-Based Modalities</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                      <span className="!text-gray-800 font-medium">Trauma-Informed Life Coaching</span>
+                    </div>
+                  </div>
+                </div>
+
+                <p className="!text-gray-700 leading-relaxed font-medium italic">
+                  Her background shapes AVP's integrative, evidence-informed approach to helping veterans reclaim their lives after service.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Program Design & Clinical Framework */}
       <section className="py-24 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold mb-6 !text-gray-900">
-              Program Design & Clinical Framework
+              Program Model
             </h2>
             <div className="w-24 h-1 bg-green-600 mx-auto mb-8" />
             <p className="text-xl !text-gray-800 max-w-4xl mx-auto leading-relaxed font-medium">
-              AVP's programs are designed around a structured, evidence-informed, trauma-aware methodology shaped by 30+ years of clinical experience and veteran-facing practice.
+              AVP's programs are designed around a structured, evidence-informed, trauma-aware methodology shaped by decades of clinical experience and veteran-facing practice.
             </p>
           </div>
 
@@ -433,12 +495,12 @@ export default function Index() {
                   <Target className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold !text-blue-900 mb-2">Individualized Clinical Design</h3>
-                  <p className="!text-gray-700 font-medium">Personalized assessment and care plans</p>
+                  <h3 className="text-2xl font-bold !text-blue-900 mb-2">Individualized</h3>
+                  <p className="!text-gray-700 font-medium">Customized reintegration plans for each veteran</p>
                 </div>
               </div>
               <p className="!text-gray-800 leading-relaxed font-medium mb-4">
-                Each veteran receives a personalized assessment and care plan informed by their service history, trauma profile, symptoms, goals, and reintegration needs.
+                Each veteran receives an assessment-based, customized reintegration plan informed by their service history, trauma profile, symptoms, goals, and unique reintegration needs.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
@@ -471,12 +533,12 @@ export default function Index() {
                   <Heart className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold !text-green-900 mb-2">Multi-Modal Healing Model</h3>
+                  <h3 className="text-2xl font-bold !text-green-900 mb-2">Multi-Modal</h3>
                   <p className="!text-gray-700 font-medium">Integrated therapeutic approaches</p>
                 </div>
               </div>
               <p className="!text-gray-800 leading-relaxed font-medium mb-4">
-                AVP employs an integrated therapeutic repertoire addressing the whole person:
+                Somatic work, energy-based care, trauma-aware coaching, nature immersion, physical challenge, creative expression, and facilitated group dialogue.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
@@ -514,8 +576,11 @@ export default function Index() {
           {/* Trauma-Informed Principles */}
           <div className="bg-gradient-to-r from-purple-900 to-purple-800 rounded-3xl p-12 shadow-2xl mb-12">
             <h3 className="text-3xl font-bold mb-8 !text-white text-center">
-              Trauma-Informed Care Principles
+              Trauma-Informed
             </h3>
+            <p className="text-lg !text-purple-100 text-center mb-8 font-medium max-w-4xl mx-auto">
+              Safety, choice, trust, collaboration, empowerment; culturally respectful practices inform but do not replace clinical methods.
+            </p>
             <div className="grid md:grid-cols-5 gap-6">
               <div className="text-center">
                 <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -560,6 +625,31 @@ export default function Index() {
             </div>
           </div>
 
+          {/* Leadership Section */}
+          <div className="mt-12 max-w-5xl mx-auto bg-white rounded-3xl p-10 shadow-xl border border-gray-200">
+            <h3 className="text-3xl font-bold mb-6 !text-blue-900 text-center">Leadership & Quality Assurance</h3>
+            <p className="text-lg !text-gray-800 leading-relaxed font-medium mb-6 text-center">
+              Erica Angell oversees strategy, program development, clinical quality, assessment protocols, and staff training to ensure a consistent, evidence-informed reintegration model.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-blue-50 rounded-2xl p-6 text-center border border-blue-200">
+                <Target className="w-10 h-10 text-blue-600 mx-auto mb-3" />
+                <h4 className="font-bold !text-blue-900 mb-2">Strategy & Development</h4>
+                <p className="text-sm !text-gray-700">Organizational vision and program growth</p>
+              </div>
+              <div className="bg-green-50 rounded-2xl p-6 text-center border border-green-200">
+                <Shield className="w-10 h-10 text-green-600 mx-auto mb-3" />
+                <h4 className="font-bold !text-green-900 mb-2">Clinical Quality</h4>
+                <p className="text-sm !text-gray-700">Maintaining therapeutic integrity</p>
+              </div>
+              <div className="bg-purple-50 rounded-2xl p-6 text-center border border-purple-200">
+                <Users className="w-10 h-10 text-purple-600 mx-auto mb-3" />
+                <h4 className="font-bold !text-purple-900 mb-2">Staff Training</h4>
+                <p className="text-sm !text-gray-700">Evidence-informed team supervision</p>
+              </div>
+            </div>
+          </div>
+
           {/* Outcome-Focused & Lifelong Support */}
           <div className="grid lg:grid-cols-2 gap-8">
             <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-200">
@@ -568,8 +658,8 @@ export default function Index() {
                   <Award className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold !text-orange-900 mb-2">Outcome-Focused Model</h3>
-                  <p className="!text-gray-700 font-medium">Measurable, evidence-based results</p>
+                  <h3 className="text-2xl font-bold !text-orange-900 mb-2">Outcome-Focused</h3>
+                  <p className="!text-gray-700 font-medium">Measurable goals, trackable progress, long-term reintegration markers</p>
                 </div>
               </div>
               <ul className="space-y-3">
@@ -602,12 +692,12 @@ export default function Index() {
                   <Users className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold !text-teal-900 mb-2">Lifelong Reintegration Pathway</h3>
-                  <p className="!text-gray-700 font-medium">Sustained support beyond the program</p>
+                  <h3 className="text-2xl font-bold !text-teal-900 mb-2">Lifelong</h3>
+                  <p className="!text-gray-700 font-medium">Continued peer support, mentor check-ins, and reunions anchored to the land</p>
                 </div>
               </div>
               <p className="!text-gray-800 leading-relaxed font-medium mb-4">
-                After the core experience on the mountain sanctuary, veterans receive:
+                After the core immersion, veterans receive:
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
@@ -741,15 +831,14 @@ export default function Index() {
             <div className="md:col-span-2">
               <div className="mb-6 bg-white p-4 rounded-lg inline-block">
                 <Image
-                  src="/avp-logo.png"
+                  src="https://77e93381c682217fcef0325458269ad5.r2.cloudflarestorage.com/phoenix/users/DxnmDi7kzHNtCxrnSWG6FJ4Bplz2/projects/fad35f43-9240-4040-90d5-bbeeedad5eb3/imageContext/e022b51c-a87f-482d-a64e-5aa92c656079.png"
                   alt="Aspen Veterans Project - Gratitude Farm"
                   width={180}
                   height={72}
                 />
               </div>
               <p className="!text-gray-300 mb-6 leading-relaxed font-medium">
-                Gratitude Farm & Aspen Veterans Project provides comprehensive sanctuary
-                and support for veterans across Colorado. We honor your service through dedicated care and community.
+                Aspen Veterans Project provides comprehensive sanctuary and lifelong reintegration support for combat veterans at our protected mountain retreat in southern New Mexico. We honor your service through dedicated care, multi-modal healing, and enduring brotherhood.
               </p>
               <div className="flex gap-4">
                 <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors" aria-label="Facebook">

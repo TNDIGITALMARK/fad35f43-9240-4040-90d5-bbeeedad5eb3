@@ -420,15 +420,14 @@ export default function AboutPage() {
             <div className="md:col-span-2">
               <div className="mb-6 bg-white p-4 rounded-lg inline-block">
                 <Image
-                  src="/avp-logo.png"
+                  src="https://77e93381c682217fcef0325458269ad5.r2.cloudflarestorage.com/phoenix/users/DxnmDi7kzHNtCxrnSWG6FJ4Bplz2/projects/fad35f43-9240-4040-90d5-bbeeedad5eb3/imageContext/e022b51c-a87f-482d-a64e-5aa92c656079.png"
                   alt="Aspen Veterans Project - Gratitude Farm"
                   width={180}
                   height={72}
                 />
               </div>
               <p className="!text-gray-300 mb-6 leading-relaxed font-medium">
-                Gratitude Farm & Aspen Veterans Project provides comprehensive sanctuary
-                and support for veterans across Colorado. We honor your service through dedicated care and community.
+                Aspen Veterans Project provides comprehensive sanctuary and lifelong reintegration support for combat veterans at our protected mountain retreat in southern New Mexico. We honor your service through dedicated care, multi-modal healing, and enduring brotherhood.
               </p>
             </div>
 
