@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gratitude Farm & Aspen Veterans Project - Supporting Our Veterans",
-  description: "A sanctuary for veterans struggling with decompression and reintegration. Immediate crisis support, community connection, and comprehensive programs for veterans in need.",
+  title: "Aspen Veterans Project - Guiding Combat Veterans from Survival to Thriving",
+  description: "Founded by Erica Angell, AVP provides lifelong, multi-modal healing for combat veterans through nature-based therapy, trauma-informed care, and community support at our mountain sanctuary in New Mexico. 24/7 crisis support available.",
 };
 
 export default function RootLayout({

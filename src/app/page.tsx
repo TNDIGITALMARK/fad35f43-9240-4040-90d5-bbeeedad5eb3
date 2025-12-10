@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 import { CrisisFAB } from "@/components/CrisisFAB";
-import { Phone, MessageCircle, Heart, Users, Home, ArrowRight, Shield, CheckCircle, Calendar, BookOpen, AlertCircle } from "lucide-react";
+import { Phone, MessageCircle, Heart, Users, Home, ArrowRight, Shield, CheckCircle, Calendar, BookOpen, AlertCircle, Target, Award } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -231,10 +231,9 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Mission Section */}
-      <section className="py-24 px-4 bg-white">
+      {/* Vision Section */}
+      <section className="py-24 px-4 bg-gradient-to-br from-blue-50 via-white to-green-50">
         <div className="container mx-auto max-w-7xl">
-          {/* Section Header */}
           <div className="text-center mb-16">
             <div className="inline-block mb-6">
               <Image
@@ -246,100 +245,392 @@ export default function Index() {
               />
             </div>
             <h2 className="text-5xl font-bold mb-6 !text-gray-900">
-              Our Mission & Vision
+              Our Vision
+            </h2>
+            <div className="w-24 h-1 bg-blue-600 mx-auto mb-8" />
+          </div>
+
+          {/* Concise Vision */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="bg-gradient-to-r from-blue-900 to-blue-800 rounded-3xl p-12 shadow-2xl text-center">
+              <p className="text-3xl font-bold !text-white leading-relaxed">
+                A world where every veteran lives free of CPTSD, isolation, and the deadly toll of homelessness—restored to connection, productivity, and a growing life after service.
+              </p>
+            </div>
+          </div>
+
+          {/* Mid-Length Vision */}
+          <div className="max-w-5xl mx-auto mb-12">
+            <div className="bg-white rounded-3xl p-10 lg:p-16 shadow-xl border border-gray-200">
+              <h3 className="text-3xl font-bold mb-6 !text-blue-900 text-center">A Future Without Invisible Wounds</h3>
+              <p className="text-xl !text-gray-800 leading-relaxed font-medium">
+                AVP envisions a future where no veteran is lost to the invisible wounds of service. A future where CPTSD, isolation, and homelessness no longer claim the lives of those who wore the uniform; where every service member receives a guided, gradual, community-rooted decompression after deployment. This vision centres on helping veterans return to a state of renewed creativity, emotional stability, purpose, and deep connection with peers who understand their lived reality.
+              </p>
+            </div>
+          </div>
+
+          {/* Rallying-Cry Vision */}
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-3xl p-10 lg:p-16 shadow-2xl border-2 border-blue-200">
+              <h3 className="text-3xl font-bold mb-8 !text-green-900 text-center flex items-center justify-center gap-3">
+                <Shield className="w-10 h-10" />
+                Never Again Lost
+              </h3>
+              <div className="prose prose-lg max-w-none">
+                <p className="text-lg !text-gray-800 leading-relaxed font-medium mb-6">
+                  The Aspen Veteran's Project sees a world where veterans are never again lost to suicide, addiction, or homelessness. CPTSD no longer steals their breath or futures; isolation is impossible because every veteran is held within a living, interconnected community—mirroring the strength of an aspen grove.
+                </p>
+                <p className="text-lg !text-gray-800 leading-relaxed font-medium mb-6">
+                  AVP imagines veterans raising families, building careers, creating art, sleeping peacefully, and living fully again after decompression and trauma recovery. The organization aims to help the nation honour its veterans not only with gratitude but with deep transformation, returning them whole, grounded, and equipped for long-term thriving.
+                </p>
+                <div className="bg-white rounded-2xl p-8 shadow-lg mt-8">
+                  <div className="grid md:grid-cols-3 gap-6 text-center">
+                    <div>
+                      <Heart className="w-12 h-12 text-red-600 mx-auto mb-3" />
+                      <p className="font-bold !text-gray-900">Raising Families</p>
+                    </div>
+                    <div>
+                      <BookOpen className="w-12 h-12 text-blue-600 mx-auto mb-3" />
+                      <p className="font-bold !text-gray-900">Creating Art</p>
+                    </div>
+                    <div>
+                      <Home className="w-12 h-12 text-green-600 mx-auto mb-3" />
+                      <p className="font-bold !text-gray-900">Living Fully</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="py-24 px-4 bg-white">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold mb-6 !text-gray-900">
+              Our Mission
             </h2>
             <div className="w-24 h-1 bg-red-600 mx-auto mb-8" />
-            <p className="text-xl !text-gray-800 max-w-3xl mx-auto leading-relaxed font-medium">
-              Gratitude Farm & Aspen Veterans Project provides a comprehensive sanctuary
-              for veterans struggling with decompression and reintegration into civilian life.
-              We honor your service through dedicated support, community, and pathways to healing.
+          </div>
+
+          {/* Concise Mission */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="bg-gradient-to-r from-green-700 to-green-600 rounded-3xl p-12 shadow-2xl text-center">
+              <p className="text-3xl font-bold !text-white leading-relaxed">
+                AVP guides combat veterans from survival to thriving through lifelong, multi-modal healing, grounded in nature, honest brotherhood, and renewed purpose—anchored at a permanently protected mountain sanctuary in southern New Mexico, supported for life.
+              </p>
+            </div>
+          </div>
+
+          {/* Mid-Length Mission */}
+          <div className="max-w-5xl mx-auto mb-12">
+            <div className="bg-white rounded-3xl p-10 lg:p-16 shadow-xl border border-gray-200">
+              <h3 className="text-3xl font-bold mb-6 !text-blue-900 text-center">
+                The Aspen Grove Metaphor
+              </h3>
+              <p className="text-xl !text-gray-800 leading-relaxed font-medium mb-6">
+                The organization moves veterans through preparation, immersion, reflection, creative challenge, and peer connection in a protected wilderness environment. AVP offers nature-based healing, philosophical exploration, physical challenge, and team rebuilding—followed by ongoing support that extends for life.
+              </p>
+              <div className="bg-blue-50 rounded-2xl p-8 border-l-4 border-blue-600">
+                <p className="text-lg !text-blue-900 leading-relaxed font-semibold italic">
+                  The aspen grove metaphor reflects AVP's core belief: veterans appear separate, but beneath the surface they are connected through shared roots, shared experience, and a shared pathway to healing.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Long-Form Mission - Journey Steps */}
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-gradient-to-br from-blue-900 to-indigo-900 rounded-3xl p-10 lg:p-16 shadow-2xl text-white">
+              <h3 className="text-3xl font-bold mb-8 !text-white text-center">
+                More Than Survival—Reclaim Your Life
+              </h3>
+              <p className="text-xl !text-blue-100 leading-relaxed font-medium mb-10 text-center">
+                AVP exists because every veteran who carried war home deserves more than survival—they deserve to reclaim their life. The project guides small cohorts of combat veterans through a proven multi-modal process:
+              </p>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
+                  <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                    <Target className="w-8 h-8 text-white" />
+                  </div>
+                  <h4 className="text-xl font-bold mb-3 !text-white text-center">Preparation</h4>
+                  <p className="!text-blue-100 text-center font-medium">Intention-setting and readiness assessment</p>
+                </div>
+
+                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
+                  <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                    <Home className="w-8 h-8 text-white" />
+                  </div>
+                  <h4 className="text-xl font-bold mb-3 !text-white text-center">Immersion</h4>
+                  <p className="!text-blue-100 text-center font-medium">Deep nature connection and healing</p>
+                </div>
+
+                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
+                  <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                    <BookOpen className="w-8 h-8 text-white" />
+                  </div>
+                  <h4 className="text-xl font-bold mb-3 !text-white text-center">Dialogue</h4>
+                  <p className="!text-blue-100 text-center font-medium">Philosophical inquiry and reflection</p>
+                </div>
+
+                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
+                  <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                    <Calendar className="w-8 h-8 text-white" />
+                  </div>
+                  <h4 className="text-xl font-bold mb-3 !text-white text-center">Challenge</h4>
+                  <p className="!text-blue-100 text-center font-medium">Physical and creative growth</p>
+                </div>
+
+                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
+                  <div className="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                    <Users className="w-8 h-8 text-white" />
+                  </div>
+                  <h4 className="text-xl font-bold mb-3 !text-white text-center">Connection</h4>
+                  <p className="!text-blue-100 text-center font-medium">Rebuilding trust with peers</p>
+                </div>
+
+                <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
+                  <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                    <Heart className="w-8 h-8 text-white" />
+                  </div>
+                  <h4 className="text-xl font-bold mb-3 !text-white text-center">Purpose</h4>
+                  <p className="!text-blue-100 text-center font-medium">Renewed self and lifelong support</p>
+                </div>
+              </div>
+
+              <div className="bg-white/20 backdrop-blur-lg rounded-2xl p-8 border border-white/30">
+                <p className="text-xl !text-white text-center leading-relaxed font-semibold">
+                  This journey culminates in renewed purpose and the rediscovery of self. AVP is not a retreat; it is the gateway to a lifelong circle of support, including peer groups, reunions, mentorship, and ongoing connection rooted in the sanctuary land.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Program Design & Clinical Framework */}
+      <section className="py-24 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold mb-6 !text-gray-900">
+              Program Design & Clinical Framework
+            </h2>
+            <div className="w-24 h-1 bg-green-600 mx-auto mb-8" />
+            <p className="text-xl !text-gray-800 max-w-4xl mx-auto leading-relaxed font-medium">
+              AVP's programs are designed around a structured, evidence-informed, trauma-aware methodology shaped by 30+ years of clinical experience and veteran-facing practice.
             </p>
           </div>
 
-          {/* Three Column Layout */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-white p-10 rounded-2xl shadow-xl text-center border border-gray-200 hover:shadow-2xl transition-shadow hover:scale-105 transform duration-300">
-              <div className="w-24 h-24 bg-red-600 rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg">
-                <Heart className="w-12 h-12 text-white" />
+          {/* Clinical Components */}
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+            {/* Individualized Clinical Design */}
+            <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-200">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Target className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold !text-blue-900 mb-2">Individualized Clinical Design</h3>
+                  <p className="!text-gray-700 font-medium">Personalized assessment and care plans</p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-4 !text-blue-900">Crisis Support</h3>
-              <p className="!text-gray-800 leading-relaxed mb-4 font-medium">
-                Immediate access to trained professionals who understand military service and the unique challenges veterans face.
+              <p className="!text-gray-800 leading-relaxed font-medium mb-4">
+                Each veteran receives a personalized assessment and care plan informed by their service history, trauma profile, symptoms, goals, and reintegration needs.
               </p>
-              <ul className="text-left space-y-2 text-sm font-semibold !text-gray-900">
+              <ul className="space-y-2">
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span>24/7 Crisis Line Access</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Physiological dysregulation</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span>Peer Support Matching</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Emotional burnout</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span>Emergency Resources</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Cognitive overload</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Relational disconnection</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Post-deployment identity fragmentation</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-white p-10 rounded-2xl shadow-xl text-center border border-gray-200 hover:shadow-2xl transition-shadow hover:scale-105 transform duration-300">
-              <div className="w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg">
-                <Users className="w-12 h-12 text-white" />
+            {/* Multi-Modal Healing Model */}
+            <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-200">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Heart className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold !text-green-900 mb-2">Multi-Modal Healing Model</h3>
+                  <p className="!text-gray-700 font-medium">Integrated therapeutic approaches</p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-4 !text-blue-900">Community</h3>
-              <p className="!text-gray-800 leading-relaxed mb-4 font-medium">
-                Connect with fellow veterans who share your experiences. Peer mentorship and support groups foster healing.
+              <p className="!text-gray-800 leading-relaxed font-medium mb-4">
+                AVP employs an integrated therapeutic repertoire addressing the whole person:
               </p>
-              <ul className="text-left space-y-2 text-sm font-semibold !text-gray-900">
+              <ul className="space-y-2">
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span>Weekly Support Groups</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Somatic regulation techniques</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span>Veteran Mentorship</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Therapeutic touch and bodywork</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span>Family Support Services</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-10 rounded-2xl shadow-xl text-center border border-gray-200 hover:shadow-2xl transition-shadow hover:scale-105 transform duration-300">
-              <div className="w-24 h-24 bg-green-600 rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg">
-                <Home className="w-12 h-12 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 !text-blue-900">Sanctuary</h3>
-              <p className="!text-gray-800 leading-relaxed mb-4 font-medium">
-                A peaceful Colorado mountain retreat offering housing, job training, counseling, and pathways to stability.
-              </p>
-              <ul className="text-left space-y-2 text-sm font-semibold !text-gray-900">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span>Safe Housing Options</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Energy-based modalities</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span>Job Training Programs</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Trauma-aware life coaching</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span>Mental Health Counseling</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Nature immersion and physical challenge</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Creative expression</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Philosophical dialogue and group processing</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          {/* Vision Statement */}
-          <div className="bg-blue-900 rounded-3xl p-12 shadow-2xl">
-            <div className="max-w-4xl mx-auto text-center">
-              <h3 className="text-3xl font-bold mb-6 !text-white">Our Vision for the Future</h3>
-              <p className="text-lg !text-blue-100 leading-relaxed font-medium">
-                Creating a nationwide network of veteran sanctuaries where healing,
-                growth, and reintegration are not just possible, but inevitable. Every veteran
-                deserves a place to decompress, heal, and rebuild their life with dignity and support.
+          {/* Trauma-Informed Principles */}
+          <div className="bg-gradient-to-r from-purple-900 to-purple-800 rounded-3xl p-12 shadow-2xl mb-12">
+            <h3 className="text-3xl font-bold mb-8 !text-white text-center">
+              Trauma-Informed Care Principles
+            </h3>
+            <div className="grid md:grid-cols-5 gap-6">
+              <div className="text-center">
+                <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-10 h-10 text-white" />
+                </div>
+                <p className="text-xl font-bold !text-white mb-2">Safety</p>
+                <p className="!text-purple-200 font-medium text-sm">Physical and emotional security</p>
+              </div>
+              <div className="text-center">
+                <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-10 h-10 text-white" />
+                </div>
+                <p className="text-xl font-bold !text-white mb-2">Choice</p>
+                <p className="!text-purple-200 font-medium text-sm">Autonomy and decision-making</p>
+              </div>
+              <div className="text-center">
+                <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-10 h-10 text-white" />
+                </div>
+                <p className="text-xl font-bold !text-white mb-2">Collaboration</p>
+                <p className="!text-purple-200 font-medium text-sm">Shared power and partnership</p>
+              </div>
+              <div className="text-center">
+                <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Heart className="w-10 h-10 text-white" />
+                </div>
+                <p className="text-xl font-bold !text-white mb-2">Trustworthiness</p>
+                <p className="!text-purple-200 font-medium text-sm">Transparency and consistency</p>
+              </div>
+              <div className="text-center">
+                <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-10 h-10 text-white" />
+                </div>
+                <p className="text-xl font-bold !text-white mb-2">Empowerment</p>
+                <p className="!text-purple-200 font-medium text-sm">Skill-building and hope</p>
+              </div>
+            </div>
+            <div className="mt-8 bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
+              <p className="!text-white text-center font-medium">
+                AVP also incorporates culturally and spiritually respectful practices; Erica's background includes study of Native American shamanic and medicine traditions, which inform but never replace clinical methods.
               </p>
+            </div>
+          </div>
+
+          {/* Outcome-Focused & Lifelong Support */}
+          <div className="grid lg:grid-cols-2 gap-8">
+            <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-200">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Award className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold !text-orange-900 mb-2">Outcome-Focused Model</h3>
+                  <p className="!text-gray-700 font-medium">Measurable, evidence-based results</p>
+                </div>
+              </div>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Measurable goals for each veteran</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Standardized outcome metrics</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Periodic reassessment and adjustments</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Documentation of symptom reduction</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Long-term reintegration indicators</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-200">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Users className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold !text-teal-900 mb-2">Lifelong Reintegration Pathway</h3>
+                  <p className="!text-gray-700 font-medium">Sustained support beyond the program</p>
+                </div>
+              </div>
+              <p className="!text-gray-800 leading-relaxed font-medium mb-4">
+                After the core experience on the mountain sanctuary, veterans receive:
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Ongoing cohort support groups</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Regular mentor check-ins</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Annual reunions at the sanctuary</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">Continued nature-based grounding opportunities</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="!text-gray-800 font-medium">A sustained network of veteran peers</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
