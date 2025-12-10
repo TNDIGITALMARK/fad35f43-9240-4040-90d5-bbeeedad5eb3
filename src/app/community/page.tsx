@@ -298,7 +298,7 @@ export default function CommunityPage() {
             <div>
               <h3 className="text-lg font-bold mb-4 text-white">Gratitude Farm</h3>
               <p className="text-gray-400">
-                A sanctuary for veterans in Colorado, providing comprehensive support for reintegration and healing.
+                Aspen Veterans Project provides comprehensive sanctuary and lifelong reintegration support for combat veterans at our protected mountain retreat in southern New Mexico.
               </p>
             </div>
             <div>
