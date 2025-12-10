@@ -284,8 +284,9 @@ a[class*="text-white"]:hover {
 }
 
 /* Ensure white text on ALL child elements when parent has text-white */
-.text-white *,
-[class*="text-white"] * {
+/* EXCEPT for form labels and inputs which need to stay dark */
+.text-white *:not(label):not(input):not(textarea):not(select),
+[class*="text-white"] *:not(label):not(input):not(textarea):not(select) {
   color: inherit !important;
 }
 
@@ -353,17 +354,18 @@ button {
 }
 
 /* Ensure ALL children of colored backgrounds inherit white text */
-.bg-red-500 *,
-.bg-red-600 *,
-.bg-red-700 *,
-.bg-blue-500 *,
-.bg-blue-600 *,
-.bg-blue-700 *,
-.bg-blue-800 *,
-.bg-blue-900 *,
-.bg-green-500 *,
-.bg-green-600 *,
-.bg-green-700 * {
+/* EXCEPT for form labels and inputs which need to stay dark */
+.bg-red-500 *:not(label):not(input):not(textarea):not(select),
+.bg-red-600 *:not(label):not(input):not(textarea):not(select),
+.bg-red-700 *:not(label):not(input):not(textarea):not(select),
+.bg-blue-500 *:not(label):not(input):not(textarea):not(select),
+.bg-blue-600 *:not(label):not(input):not(textarea):not(select),
+.bg-blue-700 *:not(label):not(input):not(textarea):not(select),
+.bg-blue-800 *:not(label):not(input):not(textarea):not(select),
+.bg-blue-900 *:not(label):not(input):not(textarea):not(select),
+.bg-green-500 *:not(label):not(input):not(textarea):not(select),
+.bg-green-600 *:not(label):not(input):not(textarea):not(select),
+.bg-green-700 *:not(label):not(input):not(textarea):not(select) {
   color: inherit !important;
 }
 
@@ -429,10 +431,11 @@ button {
 }
 
 /* Ensure all children of gradients inherit white */
-[class*="bg-gradient"] *,
-[class*="from-blue"][class*="to-blue"] *,
-.from-blue-900 *,
-.to-blue-800 * {
+/* EXCEPT for form labels and inputs which need to stay dark */
+[class*="bg-gradient"] *:not(label):not(input):not(textarea):not(select),
+[class*="from-blue"][class*="to-blue"] *:not(label):not(input):not(textarea):not(select),
+.from-blue-900 *:not(label):not(input):not(textarea):not(select),
+.to-blue-800 *:not(label):not(input):not(textarea):not(select) {
   color: inherit !important;
 }
 
@@ -629,8 +632,53 @@ select option {
   background-color: white;
 }
 
-/* Form labels should be bold and visible */
-label {
+/* Form labels should be bold and visible - CRITICAL OVERRIDE */
+/* This ensures labels are ALWAYS dark, even if they're children of text-white elements */
+label,
+form label,
+div label,
+* label,
+label[for],
+label[htmlFor] {
   color: hsl(217 19% 17%) !important;
-  font-weight: 700;
+  font-weight: 700 !important;
+}
+
+/* Double-down: Force dark text on labels regardless of parent context */
+.text-white label,
+[class*="text-white"] label,
+.bg-gradient-to-r label,
+[class*="bg-gradient"] label,
+form label,
+.form label {
+  color: hsl(217 19% 17%) !important;
+  font-weight: 700 !important;
+}
+
+/* Triple protection: Ensure labels in white backgrounds stay dark */
+.bg-white label,
+[class*="bg-white"] label {
+  color: hsl(217 19% 17%) !important;
+  font-weight: 700 !important;
+}
+
+/* NUCLEAR OPTION: Override any possible inherited white from ancestors */
+/* This catches any edge case where a label inherits white from a distant ancestor */
+* label,
+*:not(.text-white) label,
+div:not(.text-white) label,
+form:not(.text-white) label,
+section:not(.text-white) label,
+main:not(.text-white) label {
+  color: hsl(217 19% 17%) !important;
+  font-weight: 700 !important;
+}
+
+/* Even if the parent has text-white, the label should be dark */
+.text-white > label,
+[class*="text-white"] > label,
+.text-white label,
+[class*="text-white"] label {
+  color: hsl(217 19% 17%) !important;
+  font-weight: 700 !important;
 }
