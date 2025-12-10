@@ -93,9 +93,8 @@ export function ContactForm() {
                   required
                   value={formState.name}
                   onChange={handleChange}
-                  className="w-full pl-12 pr-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all bg-white"
+                  className="w-full pl-12 pr-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all bg-white !text-gray-900 font-medium"
                   placeholder="John Doe"
-                  style={{ color: 'hsl(217 19% 17%)', fontWeight: 500 }}
                 />
               </div>
             </div>
@@ -116,9 +115,8 @@ export function ContactForm() {
                   required
                   value={formState.email}
                   onChange={handleChange}
-                  className="w-full pl-12 pr-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all bg-white"
+                  className="w-full pl-12 pr-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all bg-white !text-gray-900 font-medium"
                   placeholder="john.doe@example.com"
-                  style={{ color: 'hsl(217 19% 17%)', fontWeight: 500 }}
                 />
               </div>
             </div>
@@ -138,9 +136,8 @@ export function ContactForm() {
                   name="phone"
                   value={formState.phone}
                   onChange={handleChange}
-                  className="w-full pl-12 pr-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all bg-white"
+                  className="w-full pl-12 pr-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all bg-white !text-gray-900 font-medium"
                   placeholder="(555) 123-4567"
-                  style={{ color: 'hsl(217 19% 17%)', fontWeight: 500 }}
                 />
               </div>
             </div>
@@ -156,8 +153,7 @@ export function ContactForm() {
                 required
                 value={formState.subject}
                 onChange={handleChange}
-                className="w-full px-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all bg-white"
-                style={{ color: 'hsl(217 19% 17%)', fontWeight: 500 }}
+                className="w-full px-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all bg-white !text-gray-900 font-medium"
               >
                 <option value="general">General Inquiry</option>
                 <option value="programs">Program Information</option>
@@ -184,9 +180,8 @@ export function ContactForm() {
                   value={formState.message}
                   onChange={handleChange}
                   rows={6}
-                  className="w-full pl-12 pr-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all bg-white resize-none"
+                  className="w-full pl-12 pr-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all bg-white resize-none !text-gray-900 font-medium"
                   placeholder="How can we help you?"
-                  style={{ color: 'hsl(217 19% 17%)', fontWeight: 500 }}
                 />
               </div>
             </div>
