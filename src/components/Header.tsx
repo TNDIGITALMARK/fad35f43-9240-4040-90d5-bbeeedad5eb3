@@ -36,7 +36,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="https://77e93381c682217fcef0325458269ad5.r2.cloudflarestorage.com/phoenix/users/DxnmDi7kzHNtCxrnSWG6FJ4Bplz2/projects/fad35f43-9240-4040-90d5-bbeeedad5eb3/imageContext/e022b51c-a87f-482d-a64e-5aa92c656079.png"
+              src="/aspen-veterans-project-logo.png"
               alt="Aspen Veterans Project - Gratitude Farm"
               width={48}
               height={48}
@@ -77,6 +77,12 @@ export function Header() {
             >
               Programs
             </Link>
+            <a
+              href="/#contact"
+              className="text-gray-700 hover:text-blue-900 font-medium transition-colors"
+            >
+              Contact
+            </a>
             <a
               href="#crisis-support"
               className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-2.5 rounded-lg font-semibold hover:from-red-700 hover:to-red-800 transition-all shadow-md hover:shadow-lg flex items-center gap-2"
@@ -128,6 +134,13 @@ export function Header() {
               >
                 Programs
               </Link>
+              <a
+                href="/#contact"
+                className="text-gray-700 hover:text-blue-900 font-medium py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Contact
+              </a>
               <a
                 href="#crisis-support"
                 className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-lg font-semibold hover:from-red-700 hover:to-red-800 transition-all text-center flex items-center justify-center gap-2"

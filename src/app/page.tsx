@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { CrisisFAB } from "@/components/CrisisFAB";
+import { ContactForm } from "@/components/ContactForm";
 import { Phone, MessageCircle, Heart, Users, Home, ArrowRight, Shield, CheckCircle, Calendar, BookOpen, AlertCircle, Target, Award } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -237,7 +238,7 @@ export default function Index() {
           <div className="text-center mb-16">
             <div className="inline-block mb-6">
               <Image
-                src="https://77e93381c682217fcef0325458269ad5.r2.cloudflarestorage.com/phoenix/users/DxnmDi7kzHNtCxrnSWG6FJ4Bplz2/projects/fad35f43-9240-4040-90d5-bbeeedad5eb3/imageContext/e022b51c-a87f-482d-a64e-5aa92c656079.png"
+                src="/aspen-veterans-project-logo.png"
                 alt="Aspen Veterans Project Logo"
                 width={100}
                 height={100}
@@ -823,6 +824,24 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Contact Section */}
+      <section id="contact" className="py-24 px-4 bg-gradient-to-br from-gray-50 via-blue-50 to-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-5xl font-bold mb-6 !text-gray-900">
+              Contact Us
+            </h2>
+            <div className="w-24 h-1 bg-blue-600 mx-auto mb-8" />
+            <p className="text-xl !text-gray-800 max-w-3xl mx-auto leading-relaxed font-medium">
+              Have questions about our programs or need support? We're here to help.
+              Fill out the form below and we'll get back to you as soon as possible.
+            </p>
+          </div>
+
+          <ContactForm />
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-900 py-16 px-4">
         <div className="container mx-auto max-w-7xl">
@@ -831,7 +850,7 @@ export default function Index() {
             <div className="md:col-span-2">
               <div className="mb-6 bg-white p-4 rounded-lg inline-block">
                 <Image
-                  src="https://77e93381c682217fcef0325458269ad5.r2.cloudflarestorage.com/phoenix/users/DxnmDi7kzHNtCxrnSWG6FJ4Bplz2/projects/fad35f43-9240-4040-90d5-bbeeedad5eb3/imageContext/e022b51c-a87f-482d-a64e-5aa92c656079.png"
+                  src="/aspen-veterans-project-logo.png"
                   alt="Aspen Veterans Project - Gratitude Farm"
                   width={180}
                   height={72}
@@ -866,6 +885,7 @@ export default function Index() {
                 <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
                 <li><Link href="/community" className="hover:text-white transition-colors">Community</Link></li>
                 <li><Link href="/programs" className="hover:text-white transition-colors">Programs</Link></li>
+                <li><a href="/#contact" className="hover:text-white transition-colors">Contact</a></li>
               </ul>
             </div>
 
