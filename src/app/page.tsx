@@ -807,6 +807,13 @@ export default function Index() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
+              href="/apply"
+              className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 !text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
+            >
+              <Heart className="w-5 h-5 !text-white" />
+              Apply to Join
+            </Link>
+            <Link
               href="/community"
               className="bg-white !text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
             >
@@ -815,7 +822,7 @@ export default function Index() {
             </Link>
             <Link
               href="/programs"
-              className="bg-green-600 hover:bg-green-700 !text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
+              className="bg-blue-700 hover:bg-blue-800 !text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
             >
               Explore Programs
               <ArrowRight className="w-5 h-5 !text-white" />

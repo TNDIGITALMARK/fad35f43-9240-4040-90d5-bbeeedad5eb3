@@ -77,6 +77,12 @@ export function Header() {
             >
               Programs
             </Link>
+            <Link
+              href="/apply"
+              className="text-green-700 hover:text-green-900 font-bold transition-colors"
+            >
+              Apply
+            </Link>
             <a
               href="/#contact"
               className="text-gray-700 hover:text-blue-900 font-medium transition-colors"
@@ -133,6 +139,13 @@ export function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Programs
+              </Link>
+              <Link
+                href="/apply"
+                className="text-green-700 hover:text-green-900 font-bold py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Apply
               </Link>
               <a
                 href="/#contact"
