@@ -568,3 +568,69 @@ footer a:hover,
   color: white !important;
   text-decoration: underline;
 }
+
+/* ===== FORM INPUT STYLING - CRITICAL ===== */
+
+/* Ensure form inputs have visible text and placeholders */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+input[type="number"],
+textarea,
+select {
+  color: hsl(217 19% 17%) !important; /* Dark charcoal text */
+  font-weight: 500;
+  background-color: white;
+}
+
+/* Placeholder text should be clearly visible */
+input::placeholder,
+textarea::placeholder {
+  color: hsl(217 19% 45%) !important; /* Medium gray for good contrast */
+  opacity: 1;
+  font-weight: 400;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: hsl(217 19% 45%) !important;
+  opacity: 1;
+  font-weight: 400;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: hsl(217 19% 45%) !important;
+  opacity: 1;
+  font-weight: 400;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: hsl(217 19% 45%) !important;
+  opacity: 1;
+  font-weight: 400;
+}
+
+/* Focused inputs should maintain text visibility */
+input:focus,
+textarea:focus,
+select:focus {
+  color: hsl(217 19% 17%) !important;
+  background-color: white;
+}
+
+/* Select dropdown text */
+select option {
+  color: hsl(217 19% 17%) !important;
+  background-color: white;
+}
+
+/* Form labels should be bold and visible */
+label {
+  color: hsl(217 19% 17%) !important;
+  font-weight: 700;
+}

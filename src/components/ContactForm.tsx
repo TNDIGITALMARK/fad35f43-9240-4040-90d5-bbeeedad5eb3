@@ -84,7 +84,7 @@ export function ContactForm() {
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                  <User className="w-5 h-5 text-gray-400" />
+                  <User className="w-5 h-5 text-gray-500" />
                 </div>
                 <input
                   type="text"
@@ -93,8 +93,9 @@ export function ContactForm() {
                   required
                   value={formState.name}
                   onChange={handleChange}
-                  className="w-full pl-12 pr-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all text-gray-900 font-medium"
+                  className="w-full pl-12 pr-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all bg-white"
                   placeholder="John Doe"
+                  style={{ color: 'hsl(217 19% 17%)', fontWeight: 500 }}
                 />
               </div>
             </div>
@@ -106,7 +107,7 @@ export function ContactForm() {
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                  <Mail className="w-5 h-5 text-gray-400" />
+                  <Mail className="w-5 h-5 text-gray-500" />
                 </div>
                 <input
                   type="email"
@@ -115,8 +116,9 @@ export function ContactForm() {
                   required
                   value={formState.email}
                   onChange={handleChange}
-                  className="w-full pl-12 pr-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all text-gray-900 font-medium"
+                  className="w-full pl-12 pr-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all bg-white"
                   placeholder="john.doe@example.com"
+                  style={{ color: 'hsl(217 19% 17%)', fontWeight: 500 }}
                 />
               </div>
             </div>
@@ -128,7 +130,7 @@ export function ContactForm() {
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                  <Phone className="w-5 h-5 text-gray-400" />
+                  <Phone className="w-5 h-5 text-gray-500" />
                 </div>
                 <input
                   type="tel"
@@ -136,8 +138,9 @@ export function ContactForm() {
                   name="phone"
                   value={formState.phone}
                   onChange={handleChange}
-                  className="w-full pl-12 pr-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all text-gray-900 font-medium"
+                  className="w-full pl-12 pr-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all bg-white"
                   placeholder="(555) 123-4567"
+                  style={{ color: 'hsl(217 19% 17%)', fontWeight: 500 }}
                 />
               </div>
             </div>
@@ -153,7 +156,8 @@ export function ContactForm() {
                 required
                 value={formState.subject}
                 onChange={handleChange}
-                className="w-full px-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all text-gray-900 font-medium bg-white"
+                className="w-full px-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all bg-white"
+                style={{ color: 'hsl(217 19% 17%)', fontWeight: 500 }}
               >
                 <option value="general">General Inquiry</option>
                 <option value="programs">Program Information</option>
@@ -171,7 +175,7 @@ export function ContactForm() {
               </label>
               <div className="relative">
                 <div className="absolute top-4 left-4 pointer-events-none">
-                  <MessageSquare className="w-5 h-5 text-gray-400" />
+                  <MessageSquare className="w-5 h-5 text-gray-500" />
                 </div>
                 <textarea
                   id="message"
@@ -180,8 +184,9 @@ export function ContactForm() {
                   value={formState.message}
                   onChange={handleChange}
                   rows={6}
-                  className="w-full pl-12 pr-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all text-gray-900 font-medium resize-none"
+                  className="w-full pl-12 pr-4 py-3.5 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition-all bg-white resize-none"
                   placeholder="How can we help you?"
+                  style={{ color: 'hsl(217 19% 17%)', fontWeight: 500 }}
                 />
               </div>
             </div>
