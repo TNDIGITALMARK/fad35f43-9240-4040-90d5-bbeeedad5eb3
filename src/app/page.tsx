@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { CrisisFAB } from "@/components/CrisisFAB";
 import { ContactForm } from "@/components/ContactForm";
-import { Phone, MessageCircle, Heart, Users, Home, ArrowRight, Shield, CheckCircle, Calendar, BookOpen, AlertCircle, Target, Award } from "lucide-react";
+import { Phone, MessageCircle, Heart, Users, Home, ArrowRight, Shield, CheckCircle, Calendar, BookOpen, Target, Award } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -23,9 +23,9 @@ export default function Index() {
             {/* Content Side */}
             <div className="space-y-8">
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
-                <span className="w-2 h-2 bg-red-600 rounded-full animate-pulse" />
-                24/7 Crisis Support Available
+              <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
+                <span className="w-2 h-2 bg-green-600 rounded-full animate-pulse" />
+                Comprehensive Veteran Reintegration Programs
               </div>
 
               {/* Headline with animation */}
@@ -38,7 +38,8 @@ export default function Index() {
 
               {/* Enhanced description */}
               <p className="text-xl !text-gray-800 leading-relaxed max-w-xl font-medium">
-                Supporting veterans through comprehensive decompression and reintegration programs.
+                Guiding veterans through comprehensive systems to combat issues rooted in a need for
+                decompression and reintegration in their post-service lives—all the way home.
                 You served with honor, courage, and sacrifice. Now let us serve you with the care,
                 dignity, and respect you've earned.
               </p>
@@ -50,24 +51,24 @@ export default function Index() {
                   <div className="text-sm font-medium text-gray-700">Veterans Served</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-red-600">24/7</div>
-                  <div className="text-sm font-medium text-gray-700">Crisis Support</div>
+                  <div className="text-3xl font-bold text-green-600">4</div>
+                  <div className="text-sm font-medium text-gray-700">Program Stages</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-green-600">100%</div>
+                  <div className="text-3xl font-bold text-blue-600">100%</div>
                   <div className="text-sm font-medium text-gray-700">Free Services</div>
                 </div>
               </div>
 
               {/* Enhanced CTA buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="#crisis-support"
-                  className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                <Link
+                  href="/apply"
+                  className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                 >
-                  <Phone className="w-5 h-5" />
-                  Get Help Now
-                </a>
+                  <Heart className="w-5 h-5" />
+                  Apply to Join
+                </Link>
                 <Link
                   href="/programs"
                   className="bg-gradient-to-r from-blue-900 to-blue-800 hover:from-blue-800 hover:to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
@@ -109,125 +110,56 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Crisis Support Section */}
-      <section id="crisis-support" className="py-20 bg-red-50">
+      {/* Support Resources Section - Compact */}
+      <section id="crisis-support" className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
-          {/* Alert Banner */}
-          <div className="bg-red-600 text-white rounded-2xl p-8 mb-12 max-w-5xl mx-auto shadow-xl">
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
-                <AlertCircle className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-2 text-white">In Crisis? You Are Not Alone.</h3>
-                <p className="text-red-50 text-lg font-medium">
-                  Immediate, confidential support is available right now. Trained professionals
-                  who understand military service are standing by 24/7.
-                </p>
-              </div>
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold !text-gray-900 mb-2">Support Resources</h3>
+              <p className="!text-gray-700 font-medium">
+                Veterans Crisis Line available 24/7 for immediate support
+              </p>
             </div>
-          </div>
-
-          {/* Main Title */}
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-5xl font-bold mb-4 !text-red-900">
-              Immediate Crisis Support
-            </h2>
-            <p className="text-xl font-semibold !text-red-800">
-              If you or someone you know is in crisis, help is available 24/7.
-              You are not alone.
-            </p>
-          </div>
-
-          {/* Crisis Cards - Enhanced */}
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <a
-              href="tel:988"
-              className="bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all border-2 border-red-200 hover:border-red-400 hover:scale-105 transform duration-300"
-            >
-              <div className="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg">
-                <Phone className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold !text-gray-900 mb-3 text-center">
-                Veterans Crisis Line
-              </h3>
-              <p className="text-4xl font-bold !text-red-600 mb-4 text-center">
-                988
-              </p>
-              <p className="!text-gray-800 text-center font-semibold mb-2">
-                Press 1 for immediate support
-              </p>
-              <p className="!text-gray-700 text-center text-sm font-medium">
-                Available 24/7/365
-              </p>
-            </a>
-
-            <a
-              href="sms:838255"
-              className="bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all border-2 border-blue-200 hover:border-blue-400 hover:scale-105 transform duration-300"
-            >
-              <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg">
-                <MessageCircle className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold !text-gray-900 mb-3 text-center">
-                Text Support
-              </h3>
-              <p className="text-4xl font-bold !text-blue-600 mb-4 text-center">
-                838255
-              </p>
-              <p className="!text-gray-800 text-center font-semibold mb-2">
-                24/7 confidential text support
-              </p>
-              <p className="!text-gray-700 text-center text-sm font-medium">
-                Anonymous & secure
-              </p>
-            </a>
-
-            <a
-              href="https://www.veteranscrisisline.net/get-help-now/chat/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all border-2 border-green-200 hover:border-green-400 hover:scale-105 transform duration-300"
-            >
-              <div className="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg">
-                <MessageCircle className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold !text-gray-900 mb-3 text-center">
-                Online Chat
-              </h3>
-              <p className="text-2xl font-bold !text-green-600 mb-4 text-center">
-                Start Chat Now
-              </p>
-              <p className="!text-gray-800 text-center font-semibold mb-2">
-                Confidential support available
-              </p>
-              <p className="!text-gray-700 text-center text-sm font-medium">
-                Instant connection
-              </p>
-            </a>
-          </div>
-
-          {/* Testimonial / Reassurance */}
-          <div className="mt-16 max-w-3xl mx-auto bg-white rounded-2xl p-10 shadow-xl border border-gray-200">
-            <blockquote className="text-center">
-              <p className="text-xl text-gray-800 italic mb-4 leading-relaxed font-medium">
-                "When I called, I felt heard for the first time in years. They understood
-                where I was coming from and helped me find hope again."
-              </p>
-              <footer className="text-sm text-gray-700 font-bold">
-                - Anonymous Veteran, Colorado
-              </footer>
-            </blockquote>
-          </div>
-
-          {/* Statistics */}
-          <div className="mt-12 text-center max-w-4xl mx-auto bg-white/90 rounded-2xl p-8 shadow-lg">
-            <p className="text-red-900 font-bold text-2xl mb-3">
-              Combatting the crisis: 29% of veterans face daily struggles with suicide ideation or homelessness.
-            </p>
-            <p className="text-red-800 text-lg font-bold">
-              Together, we can change this statistic. Reach out today.
-            </p>
+            <div className="grid md:grid-cols-3 gap-4">
+              <a
+                href="tel:988"
+                className="flex items-center gap-3 p-4 bg-gray-50 hover:bg-gray-100 rounded-xl transition-colors border border-gray-200"
+              >
+                <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <p className="font-bold !text-gray-900">Call 988</p>
+                  <p className="text-sm !text-gray-600">Press 1 for Veterans</p>
+                </div>
+              </a>
+              <a
+                href="sms:838255"
+                className="flex items-center gap-3 p-4 bg-gray-50 hover:bg-gray-100 rounded-xl transition-colors border border-gray-200"
+              >
+                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <MessageCircle className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <p className="font-bold !text-gray-900">Text 838255</p>
+                  <p className="text-sm !text-gray-600">24/7 Text Support</p>
+                </div>
+              </a>
+              <a
+                href="https://www.veteranscrisisline.net/get-help-now/chat/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 p-4 bg-gray-50 hover:bg-gray-100 rounded-xl transition-colors border border-gray-200"
+              >
+                <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <MessageCircle className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <p className="font-bold !text-gray-900">Online Chat</p>
+                  <p className="text-sm !text-gray-600">Confidential Support</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </section>

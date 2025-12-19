@@ -4,91 +4,87 @@ import {
   Heart,
   Users,
   MapPin,
-  Check,
-  Download,
   ArrowRight,
-  Building,
   Target,
   Shield,
-  Award,
   Leaf,
   Mountain,
-  BookOpen,
+  CheckCircle,
+  Home,
+  Laptop,
+  Phone,
+  Video,
   Calendar,
-  CheckCircle
+  Mail
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
 export const dynamic = 'force-dynamic'
 
-const programComponents = [
+const programStages = [
   {
+    stage: 1,
+    title: "Evaluation",
     icon: Target,
-    title: "Individualized Care Plans",
-    description: "Each veteran receives an assessment-based, customized reintegration plan",
-    features: [
-      "Comprehensive intake assessment",
-      "Service history and trauma profile evaluation",
-      "Symptom mapping and goal setting",
-      "Personalized reintegration roadmap",
-      "Addressing physiological, emotional, and cognitive needs"
+    color: "blue",
+    description: "Assessment and intake to understand your unique needs",
+    details: [
+      "Can take place at the end of your service time",
+      "Come directly from service to us if possible",
+      "Electronic evaluation available if in-person is not feasible",
+      "Comprehensive assessment of your service history and current needs",
+      "Personalized reintegration roadmap development"
     ],
-    color: "blue"
+    timing: "Before or immediately after service separation"
   },
   {
+    stage: 2,
+    title: "Arrival & Tailored Program",
+    icon: Mountain,
+    color: "green",
+    description: "Immersion at the sanctuary with personalized healing modalities",
+    details: [
+      "Arrival at our protected mountain sanctuary in southern New Mexico",
+      "Exploration of various healing modalities suited to your needs",
+      "Program tailored specifically for your individual requirements",
+      "Multi-modal healing: somatic work, energy-based care, nature immersion",
+      "Trauma-informed coaching and peer support",
+      "Physical challenge and creative expression opportunities"
+    ],
+    timing: "Duration based on individual needs"
+  },
+  {
+    stage: 3,
+    title: "Familial Connections",
+    icon: Home,
+    color: "purple",
+    description: "Healing family relationships and preparing for reintegration",
+    details: [
+      "Identifying familial connections that may need support",
+      "Therapeutic assistance for family members",
+      "Support for moving forward after divorce, child custody, or family challenges",
+      "Family members can visit the sanctuary for guided healing sessions",
+      "Return home together with renewed connections",
+      "Connection to employment opportunities and health resources in your community"
+    ],
+    timing: "When ready for family involvement"
+  },
+  {
+    stage: 4,
+    title: "Ongoing Support",
     icon: Heart,
-    title: "Multi-Modal Healing",
-    description: "Integrated therapeutic approaches for comprehensive healing",
-    features: [
-      "Somatic regulation techniques",
-      "Therapeutic touch and bodywork",
-      "Energy-based modalities (Reiki)",
-      "Trauma-aware life coaching",
-      "Nature immersion and physical challenge",
-      "Creative expression and philosophical dialogue"
+    color: "teal",
+    description: "Lifelong connection and continued resources",
+    details: [
+      "Return to the sanctuary for periodic retreats",
+      "Temporary stays available if additional support is needed",
+      "Email support and regular check-ins",
+      "Zoom meetings and virtual group sessions",
+      "Online peer support groups",
+      "Annual reunions and community events"
     ],
-    color: "green"
-  },
-  {
-    icon: Shield,
-    title: "Trauma-Informed Care",
-    description: "Safety, choice, trust, collaboration, and empowerment guide every interaction",
-    features: [
-      "Physical and emotional safety protocols",
-      "Veteran autonomy and choice",
-      "Collaborative care planning",
-      "Transparent communication",
-      "Skill-building and empowerment focus",
-      "Culturally respectful practices"
-    ],
-    color: "purple"
-  },
-  {
-    icon: Award,
-    title: "Outcome-Focused",
-    description: "Measurable goals, trackable progress, and long-term reintegration markers",
-    features: [
-      "Individualized measurable goals",
-      "Standardized outcome metrics",
-      "Periodic reassessment and adjustments",
-      "Documentation of symptom reduction",
-      "Long-term reintegration indicators"
-    ],
-    color: "orange"
-  },
-  {
-    icon: Users,
-    title: "Lifelong Support",
-    description: "Continued peer support, mentor check-ins, and reunions anchored to the land",
-    features: [
-      "Ongoing cohort support groups",
-      "Regular mentor check-ins",
-      "Annual reunions at the sanctuary",
-      "Continued nature-based grounding opportunities",
-      "Sustained network of veteran peers"
-    ],
-    color: "teal"
+    timing: "Lifelong availability"
   }
 ];
 
@@ -99,62 +95,6 @@ const sanctuaryFeatures = [
   "Philosophical dialogue and group processing",
   "Peer bonding and team rebuilding",
   "Multi-modal healing in a safe environment"
-];
-
-const journeyPhases = [
-  {
-    icon: Target,
-    title: "Preparation",
-    description: "Intention-setting and readiness assessment before immersion"
-  },
-  {
-    icon: Mountain,
-    title: "Immersion",
-    description: "Deep nature connection and multi-modal healing at the sanctuary"
-  },
-  {
-    icon: BookOpen,
-    title: "Dialogue",
-    description: "Philosophical inquiry, reflection, and group processing"
-  },
-  {
-    icon: Calendar,
-    title: "Challenge",
-    description: "Physical and creative growth through structured activities"
-  },
-  {
-    icon: Users,
-    title: "Connection",
-    description: "Rebuilding trust and forming lifelong bonds with peers"
-  },
-  {
-    icon: Heart,
-    title: "Purpose",
-    description: "Renewed self-discovery and ongoing support network"
-  }
-];
-
-const enrollmentSteps = [
-  {
-    step: 1,
-    title: "Initial Contact",
-    description: "Reach out via phone, email, or our online form to express interest in our programs."
-  },
-  {
-    step: 2,
-    title: "Intake Assessment",
-    description: "Complete a confidential assessment to understand your needs and match you with appropriate services."
-  },
-  {
-    step: 3,
-    title: "Program Matching",
-    description: "Our team recommends specific programs and creates a personalized support plan for you."
-  },
-  {
-    step: 4,
-    title: "Enrollment & Support",
-    description: "Begin your program with dedicated case management and ongoing support throughout your journey."
-  }
 ];
 
 export default function ProgramsPage() {
@@ -173,29 +113,29 @@ export default function ProgramsPage() {
                 Evidence-Informed, Trauma-Aware Care
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight !text-gray-900">
-                The AVP{" "}
+                The Four Stages of{" "}
                 <span className="!text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-900">
-                  Reintegration Model
+                  AVP Reintegration
                 </span>
               </h1>
               <p className="text-xl !text-gray-800 mb-8 leading-relaxed font-medium">
-                A comprehensive, individualized pathway from survival to thriving through multi-modal
-                healing, nature immersion, and lifelong peer support on our protected mountain sanctuary.
+                A comprehensive, individualized pathway guiding veterans through evaluation, healing,
+                family reconnection, and lifelong support at our protected mountain sanctuary.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="#program-model"
+                  href="#four-stages"
                   className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                 >
-                  Explore Our Model
+                  Explore the Four Stages
                   <ArrowRight className="w-5 h-5" />
                 </a>
-                <a
-                  href="#enroll"
+                <Link
+                  href="/apply"
                   className="bg-gradient-to-r from-blue-900 to-blue-800 hover:from-blue-800 hover:to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                 >
                   Begin Your Journey
-                </a>
+                </Link>
               </div>
             </div>
             <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
@@ -211,47 +151,73 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* Program Model Components */}
-      <section id="program-model" className="py-24 px-4 bg-white">
+      {/* Four Stages Section */}
+      <section id="four-stages" className="py-24 px-4 bg-white">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 !text-gray-900">
-              Five Pillars of the AVP Model
+              The Four Stages of the AVP Program
             </h2>
             <div className="w-24 h-1 bg-green-600 mx-auto mb-6" />
             <p className="text-xl !text-gray-800 max-w-4xl mx-auto leading-relaxed font-medium">
-              Our evidence-informed program is built on five interconnected pillars, each designed
-              to support veterans through comprehensive, lasting reintegration.
+              Our evidence-informed program guides veterans through four interconnected stages,
+              each designed to support comprehensive, lasting reintegration.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {programComponents.map((component, index) => {
-              const Icon = component.icon;
+          <div className="space-y-12">
+            {programStages.map((stage, index) => {
+              const Icon = stage.icon;
               const colorClasses = {
-                blue: "bg-blue-600",
-                green: "bg-green-600",
-                purple: "bg-purple-600",
-                orange: "bg-orange-600",
-                teal: "bg-teal-600"
+                blue: { bg: "bg-blue-600", light: "bg-blue-50", border: "border-blue-200", text: "text-blue-900" },
+                green: { bg: "bg-green-600", light: "bg-green-50", border: "border-green-200", text: "text-green-900" },
+                purple: { bg: "bg-purple-600", light: "bg-purple-50", border: "border-purple-200", text: "text-purple-900" },
+                teal: { bg: "bg-teal-600", light: "bg-teal-50", border: "border-teal-200", text: "text-teal-900" }
               };
+              const colors = colorClasses[stage.color as keyof typeof colorClasses];
 
               return (
-                <div key={index} className="bg-white p-8 rounded-2xl shadow-xl border border-gray-200 hover:shadow-2xl transition-shadow">
-                  <div className={`w-16 h-16 ${colorClasses[component.color as keyof typeof colorClasses]} rounded-full flex items-center justify-center mb-6`}>
-                    <Icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold !text-gray-900 mb-3">{component.title}</h3>
-                  <p className="!text-gray-700 mb-6 leading-relaxed font-medium">{component.description}</p>
+                <div key={index} className={`${colors.light} rounded-3xl p-8 lg:p-12 border-2 ${colors.border} shadow-lg`}>
+                  <div className="flex flex-col lg:flex-row gap-8">
+                    {/* Stage Number & Icon */}
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center gap-4 mb-4 lg:mb-0">
+                        <div className={`w-20 h-20 ${colors.bg} rounded-full flex items-center justify-center shadow-lg`}>
+                          <span className="text-3xl font-bold text-white">{stage.stage}</span>
+                        </div>
+                        <div className={`w-16 h-16 ${colors.bg} rounded-full flex items-center justify-center shadow-lg lg:hidden`}>
+                          <Icon className="w-8 h-8 text-white" />
+                        </div>
+                      </div>
+                      <div className={`hidden lg:flex w-16 h-16 ${colors.bg} rounded-full items-center justify-center shadow-lg mt-4`}>
+                        <Icon className="w-8 h-8 text-white" />
+                      </div>
+                    </div>
 
-                  <ul className="space-y-3">
-                    {component.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start gap-2 !text-gray-800">
-                        <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                        <span className="text-sm font-medium">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
+                    {/* Content */}
+                    <div className="flex-1">
+                      <h3 className={`text-3xl font-bold mb-3 ${colors.text}`}>
+                        {stage.title}
+                      </h3>
+                      <p className="text-xl !text-gray-700 mb-6 font-medium">
+                        {stage.description}
+                      </p>
+
+                      <div className="grid md:grid-cols-2 gap-4 mb-6">
+                        {stage.details.map((detail, idx) => (
+                          <div key={idx} className="flex items-start gap-3">
+                            <CheckCircle className={`w-5 h-5 ${colors.text} flex-shrink-0 mt-0.5`} />
+                            <span className="!text-gray-800 font-medium">{detail}</span>
+                          </div>
+                        ))}
+                      </div>
+
+                      <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full ${colors.bg} text-white font-semibold text-sm`}>
+                        <Calendar className="w-4 h-4" />
+                        {stage.timing}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               );
             })}
@@ -259,30 +225,39 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* Journey Phases */}
+      {/* Journey Visualization */}
       <section className="py-24 px-4 bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 !text-white">
-              The Reintegration Journey
+              Your Complete Reintegration Journey
             </h2>
             <div className="w-24 h-1 bg-white mx-auto mb-6" />
             <p className="text-xl !text-blue-100 max-w-4xl mx-auto leading-relaxed font-medium">
-              Veterans move through six interconnected phases, each building on the last to create
-              lasting transformation and lifelong connection.
+              From your first evaluation through lifelong support, AVP walks with you every step of the way.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {journeyPhases.map((phase, index) => {
-              const Icon = phase.icon;
+          <div className="grid md:grid-cols-4 gap-6">
+            {programStages.map((stage, index) => {
+              const Icon = stage.icon;
               return (
-                <div key={index} className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all">
-                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
-                    <Icon className="w-8 h-8 text-white" />
+                <div key={index} className="relative">
+                  <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all h-full">
+                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                      <Icon className="w-8 h-8 text-white" />
+                    </div>
+                    <div className="text-center">
+                      <span className="text-sm font-bold text-blue-200 uppercase tracking-wider">Stage {stage.stage}</span>
+                      <h3 className="text-xl font-bold !text-white mt-2 mb-3">{stage.title}</h3>
+                      <p className="!text-blue-100 text-sm leading-relaxed font-medium">{stage.description}</p>
+                    </div>
                   </div>
-                  <h3 className="text-2xl font-bold !text-white mb-3">{phase.title}</h3>
-                  <p className="!text-blue-100 leading-relaxed font-medium">{phase.description}</p>
+                  {index < programStages.length - 1 && (
+                    <div className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+                      <ArrowRight className="w-6 h-6 text-white/50" />
+                    </div>
+                  )}
                 </div>
               );
             })}
@@ -290,10 +265,92 @@ export default function ProgramsPage() {
 
           <div className="mt-16 bg-white/20 backdrop-blur-lg rounded-3xl p-10 border border-white/30 text-center">
             <p className="text-2xl !text-white leading-relaxed font-semibold">
-              This journey culminates in renewed purpose and the rediscovery of self. AVP is not
-              a retreat; it is the gateway to a lifelong circle of support, including peer groups,
-              reunions, mentorship, and ongoing connection rooted in the sanctuary land.
+              AVP is not a retreat—it is a permanent reintegration pathway. We honor your service by providing
+              the comprehensive support needed to return to a life of purpose, connection, and stability.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Ongoing Support Details */}
+      <section className="py-24 px-4 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 !text-gray-900">
+              Ongoing Support Options
+            </h2>
+            <div className="w-24 h-1 bg-teal-600 mx-auto mb-6" />
+            <p className="text-xl !text-gray-800 max-w-4xl mx-auto leading-relaxed font-medium">
+              Stage 4 provides multiple avenues for continued connection and support, ensuring you're never alone on your journey.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-teal-50 p-8 rounded-2xl border-2 border-teal-200 shadow-lg">
+              <div className="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mb-6">
+                <Mountain className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold !text-teal-900 mb-3">Sanctuary Retreats</h3>
+              <p className="!text-gray-700 leading-relaxed font-medium">
+                Return to the sanctuary for periodic retreats to reconnect with nature, peers, and yourself.
+                Retreats are available throughout the year.
+              </p>
+            </div>
+
+            <div className="bg-blue-50 p-8 rounded-2xl border-2 border-blue-200 shadow-lg">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-6">
+                <Home className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold !text-blue-900 mb-3">Temporary Returns</h3>
+              <p className="!text-gray-700 leading-relaxed font-medium">
+                If you need additional assistance at any time, you can return to the sanctuary
+                for temporary periods of intensive support.
+              </p>
+            </div>
+
+            <div className="bg-purple-50 p-8 rounded-2xl border-2 border-purple-200 shadow-lg">
+              <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mb-6">
+                <Mail className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold !text-purple-900 mb-3">Email Support</h3>
+              <p className="!text-gray-700 leading-relaxed font-medium">
+                Stay connected through regular email check-ins with our staff and access to resources
+                whenever you need them.
+              </p>
+            </div>
+
+            <div className="bg-green-50 p-8 rounded-2xl border-2 border-green-200 shadow-lg">
+              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mb-6">
+                <Video className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold !text-green-900 mb-3">Zoom Meetings</h3>
+              <p className="!text-gray-700 leading-relaxed font-medium">
+                Participate in virtual one-on-one sessions and group meetings from anywhere,
+                maintaining connection with your support network.
+              </p>
+            </div>
+
+            <div className="bg-orange-50 p-8 rounded-2xl border-2 border-orange-200 shadow-lg">
+              <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mb-6">
+                <Users className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold !text-orange-900 mb-3">Peer Support Groups</h3>
+              <p className="!text-gray-700 leading-relaxed font-medium">
+                Join online peer support groups to connect with fellow veterans who understand
+                your journey and share in your continued growth.
+              </p>
+            </div>
+
+            <div className="bg-red-50 p-8 rounded-2xl border-2 border-red-200 shadow-lg">
+              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-6">
+                <Calendar className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold !text-red-900 mb-3">Annual Reunions</h3>
+              <p className="!text-gray-700 leading-relaxed font-medium">
+                Gather annually with your cohort and the broader AVP community for reunions
+                that strengthen lifelong bonds.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -371,52 +428,30 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* Enrollment Process */}
-      <section id="enroll" className="py-24 px-4 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6 !text-gray-900">Begin Your Journey</h2>
-            <div className="w-24 h-1 bg-blue-600 mx-auto mb-6" />
-            <p className="text-xl !text-gray-800 max-w-3xl mx-auto leading-relaxed font-medium">
-              Starting with AVP is straightforward. Our intake process ensures you receive personalized
-              care from day one.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            {enrollmentSteps.map((item, index) => (
-              <div key={index} className="relative">
-                <div className="bg-white p-6 rounded-2xl shadow-xl border-2 border-blue-200 text-center h-full hover:shadow-2xl transition-shadow">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg">
-                    {item.step}
-                  </div>
-                  <h3 className="text-xl font-bold !text-gray-900 mb-3">{item.title}</h3>
-                  <p className="!text-gray-700 text-sm leading-relaxed font-medium">{item.description}</p>
-                </div>
-                {index < enrollmentSteps.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
-                    <ArrowRight className="w-8 h-8 text-blue-400" />
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-
-          <div className="bg-gradient-to-r from-blue-900 to-blue-800 rounded-3xl p-12 text-center shadow-2xl">
-            <h3 className="text-3xl font-bold mb-4 !text-white">Ready to Begin Your Reintegration?</h3>
-            <p className="text-xl mb-8 !text-blue-100 max-w-2xl mx-auto leading-relaxed font-medium">
-              Our team is ready to guide you through the intake process and answer any questions
-              about the AVP program model.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white !text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2">
-                <Download className="w-5 h-5 !text-blue-900" />
-                Download Information Packet
-              </button>
-              <button className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl">
-                Contact Our Team
-              </button>
-            </div>
+      {/* CTA Section */}
+      <section className="py-20 px-4 bg-gradient-to-r from-blue-900 to-blue-800">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-4xl font-bold mb-6 !text-white">
+            Ready to Begin Your Reintegration Journey?
+          </h2>
+          <p className="text-xl mb-8 !text-blue-100 font-medium leading-relaxed">
+            Our team is ready to guide you through the evaluation process and answer any questions
+            about the AVP four-stage program.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/apply"
+              className="bg-white !text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
+            >
+              <Heart className="w-5 h-5 !text-blue-900" />
+              Apply Now
+            </Link>
+            <Link
+              href="/#contact"
+              className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
+            >
+              Contact Our Team
+            </Link>
           </div>
         </div>
       </section>
@@ -457,7 +492,7 @@ export default function ProgramsPage() {
               <ul className="space-y-3">
                 <li>
                   <a href="tel:988" className="text-red-400 hover:text-red-300 transition-colors font-semibold flex items-center gap-2">
-                    <Heart className="w-4 h-4" />
+                    <Phone className="w-4 h-4" />
                     Crisis Line: 988
                   </a>
                 </li>

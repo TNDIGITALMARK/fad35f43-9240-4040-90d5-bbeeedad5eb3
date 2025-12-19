@@ -244,14 +244,14 @@ export function ContactForm() {
               </a>
 
               <a
-                href="mailto:info@aspenvetwrsproject.org"
+                href="mailto:info@aspenveteransproject.org"
                 className="bg-blue-50 border-2 border-blue-200 hover:border-blue-400 rounded-xl p-6 text-center transition-all hover:shadow-lg group"
               >
                 <div className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                   <Mail className="w-7 h-7 text-white" />
                 </div>
                 <p className="text-sm font-bold text-gray-700 mb-1">Email Us</p>
-                <p className="text-sm font-bold text-blue-600 break-all">info@aspenvetwrsproject.org</p>
+                <p className="text-sm font-bold text-blue-600 break-all">info@aspenveteransproject.org</p>
                 <p className="text-xs text-gray-600 mt-2">24-48 hour response</p>
               </a>
 
