@@ -84,7 +84,7 @@ export default function Index() {
               {/* Main image */}
               <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/generated/hero-sanctuary.png"
+                  src="/requested-images/1000006891.jpg"
                   alt="Gratitude Farm sanctuary with mountain backdrop"
                   fill
                   className="object-cover"

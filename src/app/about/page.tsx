@@ -60,7 +60,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/generated/hero-sanctuary.png"
+                  src="/requested-images/1000006665.png"
                   alt="Erica Angell - Founder of Aspen Veterans Project"
                   fill
                   className="object-cover"

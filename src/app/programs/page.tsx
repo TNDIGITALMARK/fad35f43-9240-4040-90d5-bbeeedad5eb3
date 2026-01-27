@@ -140,7 +140,7 @@ export default function ProgramsPage() {
             </div>
             <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/generated/hero-sanctuary.png"
+                src="/requested-images/1000006891.jpg"
                 alt="Aspen Veterans Project mountain sanctuary for healing and reintegration"
                 fill
                 className="object-cover"
@@ -396,7 +396,7 @@ export default function ProgramsPage() {
 
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/generated/hero-sanctuary.png"
+                src="/requested-images/1000006891.jpg"
                 alt="Mountain sanctuary in southern New Mexico"
                 fill
                 className="object-cover"
